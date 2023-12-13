@@ -1,8 +1,7 @@
 body {
-    background-color: rgb(247, 244, 240);
+    background-color: rgb(250, 249, 247);
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 
 
@@ -67,7 +66,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 30px;
-    justify-content: center; /* Center all items */
+    justify-content: center; 
 
 }
 
@@ -82,4 +81,18 @@ h1 {
     font-size: 50px;
     margin-bottom: 60px;
     color: rgb(3, 1, 7);
+}
+
+.search-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid rgb(233, 227, 227);
+    border-radius: 5px;
+    width: 150px; 
 }
