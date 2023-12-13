@@ -28,8 +28,12 @@ const fetchPokemon = () => {
                 image: data.sprites['front_default'],
                 type: data.types.map((type) => type.type.name).join(', ')
             }))
+
+
         // Call 'displayPokemon' function and pass the simplified 'pokemon' array    
         displayPokemon(pokemon)
+
+        originalPokemonList = pokemon;
         
     });
       
@@ -48,6 +52,16 @@ const displayPokemon = (pokemon) => {
 
     // Set the inner HTML of the element with the ID 'pokedex'to the created HTML string
     pokedex.innerHTML = pokemonHTMLString;
+}
+
+const searchPokemon = () => {
+    const searchInput = document.getElementById('search-input');
+    const searchTerm = searchInput.value.toLowerCase();
+
+    const filteredPokemon = originalPokemonList.filter(poke => {
+        return poke.name.toLowerCase().includes(searchTerm);
+    });
+    displayPokemon(filteredPokemon);
 }
 
 // Call 'fectPokemon' function to start fetching and displaying pokemon
