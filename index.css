@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(250, 249, 247);
+    background-color: #FFFF;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -12,7 +12,7 @@ body {
     color: rgb(1, 0, 2);
     text-align: center;
     border-radius: 15px;
-    border: 5px solid rgb(102, 21, 21);
+    border: 5px solid #f4d403;
     width: 260px; 
     margin: 0 15px 30px; 
     display: inline-block;
@@ -25,7 +25,7 @@ body {
 
 .card:hover {
     animation: bounce 1s linear;
-    color: blue;
+    color: #4465B2;
 }
 
 @keyframes bounce {
@@ -78,9 +78,10 @@ body {
 h1 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 60px;
-    color: rgb(3, 1, 7);
+    color: #f4d403;
+    text-shadow: 2px 1px 1px #4465B2;
 }
 
 .search-wrap {
@@ -95,4 +96,16 @@ h1 {
     border: 2px solid rgb(233, 227, 227);
     border-radius: 5px;
     width: 150px; 
+}
+
+.body-container {
+    text-align: center;
+}
+
+.pokemon-title {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    text-align: center;
 }
