@@ -14,8 +14,9 @@ body {
     border-radius: 15px;
     border: 5px solid #f4d403;
     width: 260px; 
-    margin: 0 15px 30px; 
-    display: inline-block;
+    margin: 0 auto 30px; 
+    display: block;
+
 }
 
 #pokedex li:only-child {
